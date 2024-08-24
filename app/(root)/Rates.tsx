@@ -7,61 +7,87 @@ import leafImg from '@/public/leaf.png';
 
 const Rates = () => {
   return (
-    <section id="rates">
-      <header>
-        <h1>Our Rates</h1>
-        <p><small>(Last Month)</small></p>
+    <section id="rates" className="px-48 py-24 flex items-center justify-center flex-col">
+      <header className="flex flex-col items-center justify-center">
+        <h1 className=" font-bold text-5xl">Our <span className="text-[#04773B]">Rates</span></h1>
+        <p className="text-black font-semibold text-lg"><small>(Last Month)</small></p>
       </header>
-      <div>
-        <article>
-          <Image src={gradeA} alt="Grade A quality tea leaves" />
-          <h2>Grade A</h2>
-          <p>Grade A leaves are carefully cultivated and handpicked by skilled workers, selecting only the finest, tender buds and topmost leaves.</p>
-          <div>
-            <div>
-              <Image src={clockImg} alt="Duration for Grade A leaves" />
-              <small>7 Days</small>
+      <div className="flex flex-row items-start justify-between mt-5 gap-20">
+        <article className="max-w-sm w-full bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:border-[#04773B]">
+          <Image
+            src={gradeA}
+            alt="Grade A quality tea leaves"
+            className="w-full h-48 object-cover"
+          />
+          <div className="p-6">
+            <h2 className="text-2xl font-semibold text-[#04773B] mb-2">Grade A</h2>
+            <p className="text-gray-700 mb-4">
+              Grade A leaves are cultivated, skilled hands delicately pluck only the finest, tender buds and topmost leaves.
+            </p>
+            <div className="flex gap-4 mb-4">
+              <div className="flex items-center space-x-2">
+                <Image src={clockImg} alt="Duration for Grade A leaves" className="w-6 h-6" />
+                <small className="text-gray-600">7 Days</small>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Image src={leafImg} alt="2 Leaves per stem for Grade A" className="w-6 h-6" />
+                <small className="text-gray-600">2 Leaves</small>
+              </div>
             </div>
-            <div>
-              <Image src={leafImg} alt="2 Leaves per stem for Grade A" />
-              <small>2 Leaves</small>
-            </div>
+            <h3 className="text-xl font-bold text-[#04773B]">LKR 210</h3>
           </div>
-          <h1>LKR 210</h1>
         </article>
 
-        <article>
-          <Image src={gradeB} alt="Grade B quality tea leaves" />
-          <h2>Grade B</h2>
-          <p>Grade B leaves are carefully selected, focusing on the most promising leaves for plucking.</p>
-          <div>
-            <div>
-              <Image src={clockImg} alt="Duration for Grade B leaves" />
-              <small>7-10 Days</small>
+
+        <article className="max-w-sm w-full bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:border-[#04773B]">
+          <Image
+            src={gradeB}
+            alt="Grade B quality tea leaves"
+            className="w-full h-48 object-cover"
+          />
+          <div className="p-6">
+            <h2 className="text-2xl font-semibold text-[#04773B] mb-2">Grade B</h2>
+            <p className="text-gray-700 mb-4">
+              Grade B leaves are carefully selected, focusing on the most promising leaves for plucking.
+            </p>
+            <div className="flex gap-4 mb-4">
+              <div className="flex items-center space-x-2">
+                <Image src={clockImg} alt="Duration for Grade A leaves" className="w-6 h-6" />
+                <small className="text-gray-600">7-10 Days</small>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Image src={leafImg} alt="2 Leaves per stem for Grade A" className="w-6 h-6" />
+                <small className="text-gray-600">3 Leaves</small>
+              </div>
             </div>
-            <div>
-              <Image src={leafImg} alt="3 Leaves per stem for Grade B" />
-              <small>3 Leaves</small>
-            </div>
+            <h3 className="text-xl font-bold text-[#04773B]">LKR 200</h3>
           </div>
-          <h1>LKR 200</h1>
         </article>
 
-        <article>
-          <Image src={gradeC} alt="Grade C quality tea leaves" />
-          <h2>Grade C</h2>
-          <p>Grade C leaves, though not as selective as higher grades, are still chosen with care.</p>
-          <div>
-            <div>
-              <Image src={clockImg} alt="Duration for Grade C leaves" />
-              <small>10-13 Days</small>
+
+        <article className="max-w-sm w-full bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:border-[#04773B]">
+          <Image
+            src={gradeC}
+            alt="Grade B quality tea leaves"
+            className="w-full h-48 object-cover"
+          />
+          <div className="p-6">
+            <h2 className="text-2xl font-semibold text-[#04773B] mb-2">Grade C</h2>
+            <p className="text-gray-700 mb-4">
+            Grade B leaves are ,Though not as selective as the harvesting process for higher grades.
+            </p>
+            <div className="flex gap-4 mb-4">
+              <div className="flex items-center space-x-2">
+                <Image src={clockImg} alt="Duration for Grade A leaves" className="w-6 h-6" />
+                <small className="text-gray-600">10-13 Days</small>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Image src={leafImg} alt="2 Leaves per stem for Grade A" className="w-6 h-6" />
+                <small className="text-gray-600">5+ Leaves</small>
+              </div>
             </div>
-            <div>
-              <Image src={leafImg} alt="5+ Leaves per stem for Grade C" />
-              <small>5+ Leaves</small>
-            </div>
+            <h3 className="text-xl font-bold text-[#04773B]">LKR 195</h3>
           </div>
-          <h1>LKR 195</h1>
         </article>
       </div>
     </section>
