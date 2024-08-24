@@ -10,6 +10,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "LCC Tea Collectors",
   description: "Tea Collecting Center",
+  icons: {
+    icon: "./greenIcon.png",
+  }
 };
 
 export default function RootLayout({
