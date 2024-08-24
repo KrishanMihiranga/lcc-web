@@ -9,18 +9,12 @@ import Services from "./Services";
 
 export default function Home() {
   return (
-    <>
-      <NavBar />
-      <main>
-        <HomePage />
-        <About />
-        <Rates />
-        <Services />
-        <Contact />
-      </main>
-      <Footer />
-    </>
-
-
+    <main>
+      <HomePage />
+      <About />
+      <Rates />
+      <Services />
+      <Contact />
+    </main>
   );
 }
