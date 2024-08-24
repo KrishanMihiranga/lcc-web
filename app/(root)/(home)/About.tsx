@@ -7,6 +7,11 @@ import farmer from '@/public/farmer.png';
 import fertilizer from '@/public/fertilizer.png';
 import customercare from '@/public/customerCare.png';
 import teaGarden from '@/public/TeaGardenBackground.png';
+import { Kalam } from 'next/font/google';
+const kalam = Kalam({
+  subsets: ["latin"],
+  weight: ["300","400","700"]
+});
 
 const About = () => {
   return (
@@ -23,8 +28,8 @@ const About = () => {
             <div className='w-max'>
               <h2 className='text-2xl lg:text-3xl font-semibold'>With Exceptional Service</h2>
               <div className='flex items-center justify-between'>
-                <div className='bg-[#04773B] w-3/4 h-[4px]'></div>
-                <div className='bg-[#04773B] w-1/4 h-[4px]'></div>
+                <div className='bg-[#04773B] w-[93%] h-[4px]'></div>
+                <div className='bg-[#04773B] w-[4%] h-[4px]'></div>
               </div>
             </div>
           </header>
@@ -53,12 +58,12 @@ const About = () => {
         </div>
       </section>
 
-      <section className='mt-32 relative'>
+      <section className='mt-32 relative' >
         <div className='bg-black absolute top-0 w-full h-full opacity-50'></div>
         <Image src={teaGarden} alt="Scenic tea garden landscape" className='w-full object-cover max-h-[800px]' />
         <div className='absolute top-0 w-full h-full flex flex-col gap-8 items-center justify-center text-white text-center px-48'>
-          <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-8xl mb-8'> The More Customers, The More Our Business Grows </h1>
-          <div className='bg-[#F5F6F6] opacity-80 text-black flex flex-wrap justify-center gap-4 py-6 rounded-3xl px-4 sm:px-6 md:px-8 lg:px-12'>
+          <h1 className={`${kalam.className} text-4xl sm:text-5xl md:text-6xl lg:text-8xl mb-8 font-bold`}> The More Customers, The More Our Business Grows </h1>
+          <div className='bg-[#F5F6F6] opacity-70 text-black flex flex-wrap justify-center gap-4 py-6 rounded-3xl px-4 sm:px-6 md:px-8 lg:px-12'>
             <div className='border-r border-black pr-4 sm:pr-8 py-4 text-center'>
               <h1 className='text-[#04773B] text-3xl sm:text-4xl md:text-5xl font-bold'>300+</h1>
               <small className='text-black font-semibold text-xs sm:text-sm'>Registered Customers</small>

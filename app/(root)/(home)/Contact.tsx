@@ -1,6 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 import contactbg from '@/public/teagardenwp.png';
 import pic from '@/public/pic.png';
+import parami from '@/public/parami.jpg'; 
 import { FaFacebook, FaWhatsapp, FaInstagram, FaTwitter, FaPhone } from "react-icons/fa";
 import vecbg from '@/public/leavesvecbg.png';
 import logoWhite from '@/public/lccLogoWhite.png';
@@ -53,7 +54,7 @@ const Contact = () => {
             name="Parami Ashinsana"
             role="Assistant Manager"
             phone="071 112 5257"
-            imgSrc={pic}
+            imgSrc={parami}
           />
           <ContactCard
             name="Kasun Jayasooriya"

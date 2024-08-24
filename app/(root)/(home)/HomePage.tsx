@@ -1,6 +1,6 @@
 import Image from "next/image";
 import background from '@/public/dashboardTeaBackground.png';
-import DashboardButton from "../components/DashboardButton";
+import DashboardButton from "@/components/DashboardButton";
 
 const Home = () => {
   return (
@@ -15,7 +15,7 @@ const Home = () => {
         />
         <div className="absolute z-20 px-6 sm:px-12 md:px-24 lg:px-32 xl:px-48 py-8">
           <header className="text-white text-center sm:text-left">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-9xl leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-9xl leading-tight font-semibold">
               LCC Tea <br /> Collectors
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl">
