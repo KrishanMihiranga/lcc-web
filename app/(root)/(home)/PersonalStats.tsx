@@ -1,10 +1,10 @@
 "use client";
 
-import { useRouter } from 'next/navigation'; 
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import Lottie from 'lottie-react';
 import herearrow from '@/public/herearrow.json';
-import LoadingPage from '@/components/LoadingPage'; 
+import LoadingPage from '@/components/LoadingPage';
 
 const PersonalStats = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -38,12 +38,13 @@ const PersonalStats = () => {
                     <span className="block text-[#04773B]">Contributions?</span>
                   </h2>
                   <p className="text-lg md:text-xl lg:text-2xl text-[#204E3D] leading-relaxed mb-8">
-                    Discover how much you've contributed to our company. Keep track of your personal stats with ease and see how your dedication helps us grow.
+                    Discover how much you&apos;ve contributed to our company. Keep track of your personal stats with ease and see how your dedication helps us grow.
                   </p>
+
                   <button
                     className="text-xl md:text-2xl bg-[#04773B] text-white hover:bg-[#366150] transition-colors px-8 py-4 rounded-md shadow-lg"
                     aria-label="View Personal Stats"
-                    onClick={() => handleNavigation('/login')} 
+                    onClick={() => handleNavigation('/login')}
                   >
                     View Personal Stats
                   </button>
