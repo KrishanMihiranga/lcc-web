@@ -53,7 +53,7 @@ const NavBar = () => {
 
         {/* Side Drawer */}
         <div
-          className={`fixed inset-y-0 left-0 z-40 transition-transform transform ${
+          className={`fixed inset-y-0 top-0 left-0 z-40 transition-transform transform ${
             drawerOpen ? "translate-x-0" : "-translate-x-full"
           } bg-white w-64 shadow-lg md:hidden`}
         >

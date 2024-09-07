@@ -6,10 +6,10 @@ import lorryImg from '@/public/lorry.png';
 
 const ServiceCard = ({ imageSrc, title, description, additionalContent }: { imageSrc: any, title: string, description: string, additionalContent: any }) => {
   return (
-    <article className="bg-white rounded-lg shadow-md  p-6 text-center  transform transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:border-[#04773B]">
-      <Image src={imageSrc} alt={title} className="mx-auto mb-4 w-20 h-20" />
-      <h3 className="text-2xl font-semibold text-[#04773B] mb-2">{title}</h3>
-      <p className="text-gray-600 mb-4">{description}</p>
+    <article className="bg-white rounded-lg shadow-md p-6 text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:border-[#04773B]">
+      <Image src={imageSrc} alt={title} className="mx-auto mb-4 w-16 h-16 sm:w-20 sm:h-20" />
+      <h3 className="text-xl sm:text-2xl font-semibold text-[#04773B] mb-2">{title}</h3>
+      <p className="text-gray-600 text-sm sm:text-base mb-4">{description}</p>
       {additionalContent && (
         <div className="text-gray-500 text-left mt-4">
           {additionalContent}
@@ -21,12 +21,12 @@ const ServiceCard = ({ imageSrc, title, description, additionalContent }: { imag
 
 const Services = () => {
   return (
-    <section id="services" className="bg-[#F5F6F6] py-16">
-      <header className="text-center mb-12">
-        <h1 className="text-4xl font-bold">Our <span className='text-[#04773B]'>Services</span></h1>
-        <p className="text-gray-600">Providing exceptional support and products to enhance your tea business.</p>
+    <section id="services" className="bg-[#F5F6F6] py-12 sm:py-16 px-4">
+      <header className="text-center mb-8 sm:mb-12">
+        <h1 className="text-3xl sm:text-4xl font-bold">Our <span className='text-[#04773B]'>Services</span></h1>
+        <p className="text-gray-600 text-sm sm:text-base">Providing exceptional support and products to enhance your tea business.</p>
       </header>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 max-w-7xl mx-auto">
         <ServiceCard
           imageSrc={timeImg}
           title="Money Advances"
@@ -41,15 +41,15 @@ const Services = () => {
             <ul className="mt-2 space-y-2">
               <li className="flex items-center space-x-2">
                 <span className="block w-2.5 h-2.5 bg-[#04773B] rounded-full"></span>
-                <span>T200 (1 year and below)</span>
+                <span className="text-sm sm:text-base">T200 (1 year and below)</span>
               </li>
               <li className="flex items-center space-x-2">
                 <span className="block w-2.5 h-2.5 bg-[#04773B] rounded-full"></span>
-                <span>T750 (1 year+)</span>
+                <span className="text-sm sm:text-base">T750 (1 year+)</span>
               </li>
               <li className="flex items-center space-x-2">
                 <span className="block w-2.5 h-2.5 bg-[#04773B] rounded-full"></span>
-                <span>T709 (5 years+)</span>
+                <span className="text-sm sm:text-base">T709 (5 years+)</span>
               </li>
             </ul>
           }
